@@ -1,0 +1,35 @@
+/*=========================================================
+	equipo.html
+===========================================================*/
+.position-absolute{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotoJuan{
+  height: 25%;
+  width: 25%;
+  background-color: #C4C4C4;
+}
+
+.fotoGabriela{
+  height: 40%;
+  width: 35%
+} 
+
+.fotoJoby{
+  height: 30%;
+  width: 45%;
+}
+
+.fotoWesley{
+  width: 35%;
+  height: 39%;
+}
+
+#contenido{
+  columns: 2;
+  justify-items: center;
+}
+
