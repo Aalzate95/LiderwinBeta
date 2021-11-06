@@ -1,16 +1,15 @@
 # Official Liderwin beta website
+
 ## Web & Mobile App Development
-<br />
 
-### TEAM
-**Leader:** _Juan X. Pita_
-<br />
+## TEAM
+### **Leader**
+* _Juan X. Pita_
 
-**Developer 1:** _Gabriela R. Ramos_
-<br />
+### **Developers**
+1. _Gabriela R. Ramos_
+2. _Joby J. Farra_
+3. _Wesley G. Briones_
 
-**Developer 2:** _Joby J. Farra_
-<br />
 
-**Developer 3:** _Wesley G. Briones_
 <br />
