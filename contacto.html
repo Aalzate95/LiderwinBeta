@@ -4,9 +4,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Liderwin - HTML Ecommerce Template</title>
+		<title>Liderwin Webpage</title>
 
  		<!-- Google font -->
  		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -34,7 +33,7 @@
  		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
  		<![endif]-->
 
-    </head>
+  </head>
 	<body>
 		<!-- CABECERA -->
 		<header>
@@ -42,8 +41,8 @@
 			<div id="top-header">
 				<div class="container">
 					<ul class="header-links pull-left">
-						<li><a href="#"><i class="fa fa-phone"></i> +593-950-518400</a></li>
 						<li><a href="#"><i class="fa fa-envelope-o"></i> ventas@liderwin.com</a></li>
+						<li><a href="#"><i class="fa fa-phone"></i> (+593) 950 518400</a></li>
 						<li><a href="#"><i class="fa fa-map-marker"></i> C.C. Buenavista Plaza B5 Local 5, Samborondón</a></li>
 					</ul>
 					<ul class="header-links pull-right">
@@ -117,7 +116,7 @@
 										<div class="cart-list">
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="./img/product01.png" alt="">
+													<img src="./img/ledvance_smart.png" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">Ledvance SMART+</a></h3>
@@ -128,7 +127,7 @@
 
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="./img/product02.png" alt="">
+													<img src="./img/nexxt_a19.png" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">Nexxt A19</a></h3>
@@ -197,8 +196,9 @@
 			<div class="container">
 				<!-- row -->
 				<div class="row">
-					<div class="col-md-12 text-center">
-						<h3 class="breadcrumb-header">Contáctanos</h3>
+					<div class="col-md-4 col-xs-6 text-center subcontainer">
+						<h3 class="breadcrumb-header breadcrumb-title">contáctanos</h3>
+            <h4 class="breadcrumb-subtitle">Nos gustaría saber de ti</h4>
 					</div>
 				</div>
 				<!-- /row -->
@@ -213,110 +213,80 @@
 			<div class="container">
 				<!-- row -->
 				<div class="row">
-					<div class="col-md-5 message-details">
+
+					<div class="col-md-7">
             <!-- Message Details -->
-            <div class="section-title text-center">
-              <h3 class="title">Envíanos un mensaje</h3>
-            </div>
-            <div class="form-group">
-              <input class="input" type="text" name="first-name" placeholder="Nombre">
-            </div>
-            <div class="form-group">
-              <input class="input" type="text" name="last-name" placeholder="Apellido">
-            </div>
-            <div class="form-group">
-              <input class="input" type="email" name="email" placeholder="Correo">
-            </div>
-            <div class="form-group">
-              <input class="input" type="text" name="subject" placeholder="Asunto">
-            </div>
-            <div class="form-group">
-              <textarea class="input" placeholder="Tu mensaje"></textarea>
-            </div>
-            <div>
+            <div class="message-details">
+              <div class="section-title">
+                <h3 class="title">Envíanos un mensaje</h3>
+              </div>
+              <div class="form-group">
+                <input class="input" type="text" name="first-name" placeholder="Nombre">
+              </div>
+              <div class="form-group">
+                <input class="input" type="text" name="last-name" placeholder="Apellido">
+              </div>
+              <div class="form-group">
+                <input class="input" type="email" name="email" placeholder="Correo">
+              </div>
+              <div class="form-group">
+                <input class="input" type="text" name="subject" placeholder="Asunto">
+              </div>
+              <div class="form-group">
+                <textarea class="input" placeholder="Tu mensaje"></textarea>
+              </div>
               <div class="btn-group">
-                <a href="#" class="primary-btn message-submit">Enviar mensaje</a>
-                <a href="#" class="secondary-btn clear-fields">Limpiar</a>
+                <button class="primary-btn message-submit"><i class="fa fa-send"></i>Enviar mensaje</button>
+                <button class="secondary-btn clear-fields"><i class="fa fa-trash"></i>Limpiar</button>
+              </div>
+  					</div>
+            <!-- /Message Details -->
+					</div>
+        
+					<div class="col-md-5 vertical-line">
+            <!-- Liderwin Info -->
+            <div class="liderwin-info">
+              <div class="section-title">
+                <h3 class="title">Visítanos</h3>
+              </div>
+              <div class="enterprise-info">
+                <div class="separator"><i class="fa fa-map-marker"></i><h4>ubicación de la oficina</h4></div>
+                <div class="data-1">
+                  <label class="city" for="city">Guayaquil</label>
+                  <span>C.C. Buenavista Plaza B5 Local 5, Km. 0.5 Vía Samborondón y Av. Rio Vinces</span>
+                  <span>Samborondón - 092301</span>
+                </div>
+                <div class="separator"><i class="fa fa-phone"></i><h4>teléfonos</h4></div>
+                <div class="data-2">
+                  <span>(+593) 4 283 7898</span>
+                  <span>(+593) 95 895 4308</span>
+                  <span>(+593) 72 939 8248</span>
+                </div>
+                <div class="separator"><i class="fa fa-envelope"></i><h4>correo electrónico</h4></div>
+                <div class="data-2">
+                  <span>ventas@liderwin.com</span>
+                  <span>corporativo@liderwin.com</span>
+                </div>
+                <div class="separator"><i class="fa fa-bell"></i><h4 class="follow-us">síguenos</h4></div>
+                <div class="social-media">
+                  <a href="https://www.facebook.com"><i class="fa fa-facebook"></a></i>
+                  <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+                </div>
               </div>
             </div>
+  					<!-- /Liderwin Info -->
 					</div>
-          <!-- /Message Details -->
           
-					<!-- Office Location -->
-					<div class="col-md-5 order-details">
-						<div class="section-title text-center">
-							<h3 class="title">Vísitanos</h3>
+          <!-- Map -->
+					<div class="col-md-12 col-xs-10 office-location">
+            <div class="section-title">
+							<h3 class="title">Ubicación en Google Maps</h3>
 						</div>
-						<div class="order-summary">
-							<div class="order-col">
-								<div><strong>PRODUCTO</strong></div>
-								<div><strong>TOTAL</strong></div>
-							</div>
-							<div class="order-products">
-								<div class="order-col">
-									<div>2x Ledvance SMART+</div>
-									<div>$56.00</div>
-								</div>
-								<div class="order-col">
-									<div>5x Nexxt A19</div>
-									<div>$105.00</div>
-								</div>
-							</div>
-							<div class="order-col">
-								<div>Envío</div>
-								<div><strong>GRATIS</strong></div>
-							</div>
-							<div class="order-col">
-								<div><strong>TOTAL</strong></div>
-								<div><strong class="order-total">$161.00</strong></div>
-							</div>
+            <div class="map-container">
+              <iframe class="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7524912451051!2d-79.86538430450634!3d-2.149871876350857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc221d2592a81a3fa!2zMsKwMDgnNTguNCJTIDc5wrA1MSc1NS45Ilc!5e0!3m2!1sen!2sec!4v1636905401208!5m2!1sen!2sec"></iframe>
 						</div>
-						<div class="payment-method">
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-1">
-								<label for="payment-1">
-									<span></span>
-									Transferencia Bancaria Directa
-								</label>
-								<div class="caption">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-2">
-								<label for="payment-2">
-									<span></span>
-									Pago con Cheque
-								</label>
-								<div class="caption">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-3">
-								<label for="payment-3">
-									<span></span>
-									Pago con Paypal
-								</label>
-								<div class="caption">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-						</div>
-						<div class="input-checkbox">
-							<input type="checkbox" id="terms">
-							<label for="terms">
-								<span></span>
-								He leído y acepto los <a href="#">términos y condiciones</a>
-							</label>
-						</div>
-						<a href="#" class="primary-btn order-submit">Realizar pedido</a>
-					</div>
-					<!-- /Office Location -->
-
-          <!-- Message Details -->
-					<div class="col-md-12">
-						<!-- AQUÍ VA EL MAPA -->
 					</div>
           <!-- /Map -->
 				</div>
@@ -338,10 +308,19 @@
 							<div class="footer">
 								<h3 class="footer-title">ACERCA DE</h3>
 								<p>Venta e instalación de artículos tecnológicos y de iluminación en la ciudad de Guayaquil.</p>
-								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>C.C. Buenavista Plaza B5 Local 5, Samborondón</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>+593-950-518400</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>ventas@liderwin.com</a></li>
+								<ul class="footer-links footer-info">
+									<li>
+                    <i class="fa fa-map-marker"></i>
+                    <a href="#">C.C. Buenavista Plaza B5 Local 5, Samborondón</a>
+                  </li>
+									<li>
+                    <i class="fa fa-phone"></i>
+                    <a href="#">(+593) 950 518400</a>
+                  </li>
+									<li>
+                    <i class="fa fa-envelope-o"></i>
+                    <a href="#">ventas@liderwin.com</a>
+                  </li>
 								</ul>
 							</div>
 						</div>
@@ -400,6 +379,14 @@
 					<!-- row -->
 					<div class="row">
 						<div class="col-md-12 text-center">
+              <ul class="footer-payments">
+								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+							</ul>
 							<span class="copyright">
 								Copyright © 2021 All rights reserved <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">TROJANS</a>
 							</span>

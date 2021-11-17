@@ -4,9 +4,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Liderwin - HTML Ecommerce Template</title>
+		<title>Liderwin Webpage</title>
 
  		<!-- Google font -->
  		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -27,14 +26,14 @@
  		<!-- Custom stlylesheet -->
  		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+ 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+ 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ 		<!--[if lt IE 9]>
+ 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+ 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ 		<![endif]-->
 
-    </head>
+  </head>
 	<body>
 		<!-- CABECERA -->
 		<header>
@@ -42,8 +41,8 @@
 			<div id="top-header">
 				<div class="container">
 					<ul class="header-links pull-left">
-						<li><a href="#"><i class="fa fa-phone"></i> +593-950-518400</a></li>
 						<li><a href="#"><i class="fa fa-envelope-o"></i> ventas@liderwin.com</a></li>
+						<li><a href="#"><i class="fa fa-phone"></i> (+593) 950 518400</a></li>
 						<li><a href="#"><i class="fa fa-map-marker"></i> C.C. Buenavista Plaza B5 Local 5, Samborondón</a></li>
 					</ul>
 					<ul class="header-links pull-right">
@@ -117,7 +116,7 @@
 										<div class="cart-list">
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="./img/product01.png" alt="">
+													<img src="./img/ledvance_smart.png" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">Ledvance SMART+</a></h3>
@@ -128,7 +127,7 @@
 
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="./img/product02.png" alt="">
+													<img src="./img/nexxt_a19.png" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">Nexxt A19</a></h3>
@@ -218,7 +217,7 @@
 				<!-- row -->
 				<div class="row">
 
-					<div class="col-md-7">
+					<div class="col-md-6 billing-shipping-details">
 						<!-- Billing Details -->
 						<div class="billing-details">
 							<div class="section-title">
@@ -255,9 +254,9 @@
 										<span></span>
 										¿Crear Cuenta?
 									</label>
-									<div class="caption">
+									<div class="caption password-container">
 										<p>Su contraseña debe tener al menos 8 caracteres (hasta 32 caracteres) y al menos un número y una letra mayúscula.</p>
-										<input class="input" type="password" name="password" placeholder="Ingresa Tu Contraseña">
+										<input class="input create-password" type="password" name="password" placeholder="Ingresa Tu Contraseña">
 									</div>
 								</div>
 							</div>
@@ -312,8 +311,8 @@
 						<!-- /Order notes -->
 					</div>
 
-					<!-- Order Details -->
-					<div class="col-md-5 order-details">
+					<div class="col-md-5 col-md-push-1 order-details">
+  					<!-- Order Details -->
 						<div class="section-title text-center">
 							<h3 class="title">Tu Orden</h3>
 						</div>
@@ -402,10 +401,19 @@
 							<div class="footer">
 								<h3 class="footer-title">ACERCA DE</h3>
 								<p>Venta e instalación de artículos tecnológicos y de iluminación en la ciudad de Guayaquil.</p>
-								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>C.C. Buenavista Plaza B5 Local 5, Samborondón</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>+593-950-518400</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>ventas@liderwin.com</a></li>
+								<ul class="footer-links footer-info">
+									<li>
+                    <i class="fa fa-map-marker"></i>
+                    <a href="#">C.C. Buenavista Plaza B5 Local 5, Samborondón</a>
+                  </li>
+									<li>
+                    <i class="fa fa-phone"></i>
+                    <a href="#">(+593) 950 518400</a>
+                  </li>
+									<li>
+                    <i class="fa fa-envelope-o"></i>
+                    <a href="#">ventas@liderwin.com</a>
+                  </li>
 								</ul>
 							</div>
 						</div>
@@ -454,6 +462,7 @@
 					<!-- /row -->
 				</div>
 				<!-- /container -->
+    
 			</div>
 			<!-- /pie de página superior -->
 
@@ -463,7 +472,7 @@
 					<!-- row -->
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<ul class="footer-payments">
+              <ul class="footer-payments">
 								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
 								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
 								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
