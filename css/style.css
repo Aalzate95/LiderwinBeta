@@ -2070,32 +2070,28 @@ form select.input-select {
 }
 
 .services {
-  margin: 10% 0;
-}
-
-.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 10%;
+  margin: 60px 0;
+  padding: 10px;
 }
 
-.warranty-replacement {
-  float: none;
-  margin: auto;
+.service {
+  margin: 30px;
 }
 
-.service-desc {
-  color: #012C73;
-  margin: 0 0 5%;
-}
-
-.services-content .service .service-img>img {
+.services .service .service-img>img {
   width: 60%;  
 }
 
 .service-desc {
   font-size: 16px;
+  color: #012C73;
   text-transform: uppercase;
-  padding: 0 20%;
+  margin-bottom: 15px;
+  padding: 0 50px;
 }
 
 /* .services-content{
@@ -2126,10 +2122,6 @@ form select.input-select {
 /*=========================================================
 	11 -> CONTACT
 ===========================================================*/
-
-/* #breadcrumb.section, [class*="title"], .message-details, .liderwin-info, .separator h4 {
-  color: #012C73;
-} */
 
 .subcontainer {
   float: none;
@@ -2263,36 +2255,76 @@ form select.input-select {
 	12 -> TEAM
 ===========================================================*/
 
-.position-absolute{
+.team {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
+  margin-bottom: 7.5rem;
+  padding: 1rem;
+}
+
+.member {
+  margin: 7.5rem;
+  padding: 2.5rem;
+  height: 600px;
+  background: #E1E1E1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.team .member .member-img {
+  display: flex;
+  justify-content: center; /* ya lo logré bai :3 */
   align-items: center;
-}
-
-.fotoJuan{
-  height: 25%;
-  width: 25%;
-  background-color: #C4C4C4;
-}
-
-.fotoGabriela{
+  width: auto;
   height: 40%;
-  width: 35%
-} 
-
-.fotoJoby{
-  height: 30%;
-  width: 45%;
+}
+.team .member .member-img>img {
+  width: auto;
+  height: 90%;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: 0.2s;
 }
 
-.fotoWesley{
-  width: 35%;
-  height: 39%;
+.team .member .member-img>img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
-#contenido{
-  columns: 2;
-  justify-items: center;
+.member-name .title {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.member-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 1ch;
+  justify-items: baseline;
+  margin-bottom: 7.5em;
+}
+
+.member-info .member-data {
+  font-weight: 600;
+}
+
+.member-info span.member-data i {
+  margin-right: 1rem;
+  color: rgba(243, 19, 19, 0.75);
+}
+
+.social-networks {
+  font-size: 2.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+}
+
+.social-networks a {
+  margin: 1rem;
 }
 
 /*=========================================================
@@ -2300,13 +2332,13 @@ form select.input-select {
 ===========================================================*/
 
 #footer {
-  background: #15161D;
+  background: #012C73;;
   color: #B9BABC;
   border-top: 3px solid #D10024;
 }
 
 #bottom-footer {
-  background: #1E1F29;
+  background: #012C73;;
 }
 
 .footer {
