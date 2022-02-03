@@ -1,0 +1,40 @@
+body.fondo {
+  background-color: rgba(153, 171, 199, 1);
+  min-height: 100vh;
+}
+
+h1 {
+  color: white;
+}
+
+.cover-logo {
+  margin: auto;
+  width: 50%;
+}
+
+p.lead,
+p.footer {
+  color: #012c73;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.header-logo {
+  margin-left: 27px;
+  margin-top: 10px;
+}
+
+.texto {
+  margin-top: 10px;
+}
+
+.fotocover {
+  width: 200px;
+}
+
+div.user {
+  /* display: grid; */
+  grid-template-columns: 50%;
+}

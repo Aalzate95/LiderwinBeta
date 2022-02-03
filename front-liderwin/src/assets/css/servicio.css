@@ -1,0 +1,48 @@
+.subheader {
+  float: none;
+  margin: auto;
+  margin-bottom: 5%;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 60px 0;
+  padding: 10px;
+}
+
+.subheader {
+  float: none;
+  margin: auto;
+  margin-bottom: 5%;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.service {
+  padding-bottom: 30px;
+  margin: 65px 35px;
+  -webkit-transition: 0.2s all;
+  transition: 0.5s all;
+  border-radius: 20px;
+}
+
+.service:hover {
+  background: #e1e1e1;
+}
+
+.services .service .service-img > img {
+  width: 60%;
+}
+
+.service-caption > p {
+  font-size: 16px;
+  color: #012c73;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding: 0 50px;
+}

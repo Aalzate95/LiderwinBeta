@@ -1,0 +1,93 @@
+/*=========================================================
+	12 -> TEAM
+===========================================================*/
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 7.5rem;
+  padding: 1rem;
+}
+
+.team .member {
+  margin: 5rem;
+  padding: 2.5rem;
+  height: 600px;
+  background: #e1e1e1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.team .member .member-img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 5px auto 20px;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-size: 105%;
+  background-repeat: no-repeat;
+  border: 3px solid #d10024;
+  transform: scale(0.9);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.team .member .member-img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.member-name .title {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.summary {
+  font-style: italic;
+  font-size: 1.125em;
+  padding: 0px 30px 20px;
+}
+
+.member-role {
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+
+.member-email {
+  font-weight: 500;
+  text-transform: lowercase;
+  padding-bottom: 20px;
+}
+
+.member-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 1.5ch;
+  justify-items: baseline;
+  text-align: left;
+  /* margin-bottom: 7.5em; */
+}
+
+.member-info .member-data {
+  font-weight: 600;
+}
+
+.member-info span.member-data i {
+  margin-right: 1rem;
+  color: rgba(243, 19, 19, 0.75);
+}
+
+.social-networks {
+  font-size: 2.5rem;
+  position: absolute;
+  margin: 1rem 2rem 1rem;
+}
+
+.social-networks a {
+  margin: 1rem;
+}

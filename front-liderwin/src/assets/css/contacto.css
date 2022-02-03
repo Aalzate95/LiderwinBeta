@@ -1,0 +1,158 @@
+.map-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 30px;
+}
+
+.map-location {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.message-details,
+.liderwin-info,
+.map-container {
+  margin-bottom: 10%;
+}
+
+.input {
+  height: 40px;
+  padding: 0px 15px;
+  border: 1px solid #e4e7ed;
+  background-color: #fff;
+  width: 100%;
+  outline: none;
+}
+
+.form-group input.input,
+.contact-group .input {
+  border-radius: 40px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  outline: none;
+}
+
+.contact-group .input {
+  margin-bottom: 15px;
+}
+
+.contact-group select.input {
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contact-group select.input:focus {
+  background-image: linear-gradient(45deg, #012c73 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, #012c73 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: #012c73;
+  outline: 0;
+}
+
+.contact-group select.input:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+.message-details {
+  padding-right: 10%;
+}
+
+button.clear-fields {
+  float: right;
+}
+
+.vertical-line {
+  border-left: rgb(141, 153, 174, 0.3) 2px solid;
+}
+
+.liderwin-info {
+  padding-left: 10%;
+}
+
+.liderwin-info .section-title {
+  text-align: center;
+}
+
+.enterprise-info .separator {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  align-items: baseline;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.enterprise-info .separator i {
+  text-align: center;
+  margin-right: 20px;
+  color: #012c73;
+}
+
+.follow-us {
+  grid-column: 2;
+}
+
+[class*="data-"] {
+  display: grid;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #012c73;
+}
+
+.data-1 {
+  margin: 10px 0 30px 25%;
+}
+
+.data-2,
+.social-media {
+  margin-left: 15%;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(4, 35px);
+  grid-template-rows: repeat(1, 35px);
+  column-gap: 35px;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.social-media a {
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(1, 45, 115, 0.25);
+  border-radius: 20%;
+  text-align: center;
+  align-items: center;
+}
+
+.social-media a:hover,
+.social-media a:focus {
+  color: #d10024;
+  border: 1px solid rgba(209, 0, 35, 0.25);
+  background-color: #e4e7ed;
+}
+
+[class*="data-"] span {
+  opacity: 0.5;
+}

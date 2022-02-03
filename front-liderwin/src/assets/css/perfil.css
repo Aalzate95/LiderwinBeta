@@ -1,0 +1,53 @@
+
+
+.perfil .form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.perfil .profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+    margin
+}
+
+.perfil .profile-button:hover {
+    background: #682773
+}
+
+.perfil .profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.perfil .profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.perfil .back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.perfil .labels {
+    font-size: 11px
+}
+
+.perfil .add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+.registro .mt-5{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.perfil .mt-5{
+    display: flex;
+    justify-content:space-evenly;
+}

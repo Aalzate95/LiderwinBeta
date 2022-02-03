@@ -7,7 +7,12 @@ var models = initModels(sequelize);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  models.Empleado.findAll({ 
+  })
+  .then(Empleado => {
+     res.send(Empleado)
+  })
+  .catch(error => res.status(400).send(error))
 });
 
 module.exports = router;
