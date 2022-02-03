@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 const Perfil = () => {
 	const url_photo = "https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
-	const {error, isPending, data} = useFetch("http://localhost:3001/clientes/3")
+	const {data} = useFetch("http://localhost:3001/clientes/3")
 	const [nombre, setnombre] = useState('');
   	const [apellido, setapellido] = useState('');
   	const [cedula, setcedula] = useState('');
@@ -51,7 +51,7 @@ const Perfil = () => {
 			    <div className="row">
 			        <div className="col-md-3 border-right">
 			            <div className="d-flex flex-column align-items-center text-center p-3 py-5">
-			            	<img className="rounded-circle mt-5" width="150px" src={url_photo}/>
+			            	<img className="rounded-circle mt-5" width="150px" src={url_photo} alt="img"/>
 							<button className="btn btn-primary btn-responsive btninter left" type="button">Subir</button>
 								<span className="font-weight-bold">{data && data.nombre+" "+data.apellido} </span>
 			            		<span className="text-black-50">{data && data.email}</span><span> </span>

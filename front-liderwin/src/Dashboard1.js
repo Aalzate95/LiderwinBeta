@@ -15,8 +15,8 @@ class ListChart extends Component {
     const margin = { top: 50, right: 50, bottom: 50, left: 50 };
 
     const width = 800,
-      height = 500,
-      padding = 100;
+      height = 500;
+      /* padding = 100; */
 
     var xScale = d3
       .scaleLinear()

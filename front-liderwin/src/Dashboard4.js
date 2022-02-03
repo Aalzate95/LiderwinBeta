@@ -1,16 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState} from "react";
 import * as d3 from "d3";
 
 function Linechart1(props) {
-  const data = [10, 20, 80, 5, 60, 30, 40, 50];
+/*   const data = [10, 20, 80, 5, 60, 30, 40, 50]; */
+  const [data] = useState([10, 20, 80, 5, 60, 30, 40, 50]);
   const width = 1000;
   const height = 500;
-
-  useEffect(() => {
-    if (data.length > 0) {
-      drawChart();
-    }
-  }, [data]);
 
   const drawChart = () => {
     const margin = { top: 50, right: 50, bottom: 50, left: 50 };
@@ -64,6 +59,13 @@ function Linechart1(props) {
       .attr("stroke", "black")
       .attr("d", (d) => line(d));
   };
+
+  useEffect(() => {
+    if (data.length > 0) {
+      drawChart();
+    }
+  }, [data,drawChart]);
+
   return <div id="container"></div>;
 }
 export default Linechart1;

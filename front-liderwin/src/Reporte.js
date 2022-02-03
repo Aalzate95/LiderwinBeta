@@ -1,12 +1,27 @@
 import "./assets/css/dashboard.css";
 import "./assets/css/styles.css";
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
+
+
 
 const Reporte = () => {
+  const [marca, setMarca] = useState([]);
+  const [fecha, setFecha] = useState();
+  const [ciudades, setCiudades] = useState(["Guayaquil", "Quito", "Cuenta"]);
+  const [ciudadSeleccionada,setCiudadSeleccionada] = useState("");
+  const [detalles, setDetalles] = useState();
+  const [id, setId] = useState("1");
+
+
+  const renderCiudades = ciudades.map((ciudad) => {
+    return <option key={ciudad} value={ciudad}>{ciudad}</option>;
+  });
+
   return (
-    <body>
+    <div>
       <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3">LIDERWIN</a>
+        <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/#">LIDERWIN</a>
         <button
           className="navbar-toggler position-absolute d-md-none collapsed"
           type="button"
@@ -26,7 +41,7 @@ const Reporte = () => {
         />
         <div className="navbar-nav">
           <div className="nav-item text-nowrap">
-            <a className="nav-link px-3">Sign out</a>
+            <a className="nav-link px-3" href="/#">Sign out</a>
           </div>
         </div>
       </header>
@@ -43,7 +58,7 @@ const Reporte = () => {
                   <Link to="/dashboard">Dashboard</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <a className="nav-link active" aria-current="page" href="/#">
                     <span data-feather="home"></span>
                     Reporte
                   </a>
@@ -54,7 +69,7 @@ const Reporte = () => {
                 <span>Saved reports</span>
                 <a
                   className="link-secondary"
-                  href="#"
+                  href="/#"
                   aria-label="Add a new report"
                 >
                   <span data-feather="plus-circle"></span>
@@ -62,25 +77,25 @@ const Reporte = () => {
               </h6>
               <ul className="nav flex-column mb-2">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/#">
                     <span data-feather="file-text"></span>
                     Current month
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/#">
                     <span data-feather="file-text"></span>
                     Last quarter
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/#">
                     <span data-feather="file-text"></span>
                     Social engagement
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/#">
                     <span data-feather="file-text"></span>
                     Year-end sale
                   </a>
@@ -117,43 +132,37 @@ const Reporte = () => {
               </div>
             </div>
             <form className="contact-group">
-              <label>Título</label>
-              <input
-                className="input"
-                type="text"
-                name="title"
-                placeholder="Título"
-                required
-              />
               <label>Elija marca</label>
-              <select className="input" name="products" required>
-                <option value="" disabled selected>
+
+              <select className="input" name="products" required defaultValue="">
+                <option value="" disabled >
                   Productos
                 </option>
-                <option value="gye">Nexxt</option>
-                <option value="uio">Ledvance</option>
-                <option value="cue">Sylvania</option>
+                <option value="Nexxt">Nexxt</option>
+                <option value="Ledvance">Ledvance</option>
+                <option value="Sylvania">Sylvania</option>
               </select>
+
               <label>Fecha</label>
               <input className="input" type="date" name="date" required />
               <label>Elige Ciudad</label>
-              <select className="input" name="city" required>
-                <option value="" disabled selected>
+
+              <select className="input" name="city" defaultValue="" required onChange={(e)=>{setCiudadSeleccionada(e.target.value)}}>
+                <option value="" disabled>
                   Ciudad
                 </option>
-                <option value="gye">Guayaquil</option>
-                <option value="uio">Quito</option>
-                <option value="cue">Cuenca</option>
+                {renderCiudades}
               </select>
+
               <label>Detalles</label>
               <textarea
                 className="input"
                 placeholder="Detalles sobre el reporte"
                 required
               ></textarea>
-              <a className="primary-btn message-submit text-decoration-none">
+              <Link className="primary-btn message-submit text-decoration-none" target="_blank" to={`/reporte/file/${id}`}>
                 Generar reporte
-              </a>
+              </Link>
               <button className="secondary-btn clear-fields" type="reset">
                 Limpiar
               </button>
@@ -161,21 +170,7 @@ const Reporte = () => {
           </main>
         </div>
       </div>
-
-      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      <script
-        src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
-        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
-        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
-        crossorigin="anonymous"
-      ></script>
-      <script src="https://d3js.org/d3.v5.min.js"></script>
-    </body>
+    </div>
   );
 };
 

@@ -5,10 +5,15 @@ import LineChart from "./Dashboard1";
 import Linechart1 from "./Dashboard4";
 // import Dashboard2 from "./Dashboard2";
 // import Dashboard3 from "./Dashboard3";
-
-import { Link } from "react-router-dom";
+import { NavLink, } from "react-router-dom";
+import { Link ,useHistory} from "react-router-dom";
 
 const Dashboard = () => {
+  const history = useHistory();
+  const Logout = () => {
+    sessionStorage.clear();
+    history.push('/login')
+}
   return (
     <body>
       <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
@@ -32,7 +37,9 @@ const Dashboard = () => {
         />
         <div className="navbar-nav">
           <div className="nav-item text-nowrap">
-            <a className="nav-link px-3">Sign out</a>
+            <div className="nav-link px-3" onClick={() => { Logout() }}>
+            Sign out
+            </div>
           </div>
         </div>
       </header>
@@ -52,7 +59,7 @@ const Dashboard = () => {
                   </a>
                 </li>
                 <li className="nav-link">
-                  <Link to="/reporte">Reporte</Link>
+                  <Link to="/reporte/inicio">Reporte</Link>
                 </li>
               </ul>
 

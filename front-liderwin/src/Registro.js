@@ -43,7 +43,7 @@ const Registro = () => {
 			    <div className="row">
 			        <div className="col-md-3 border-right">
 			            <div className="d-flex flex-column align-items-center text-center p-3 py-5">
-			            	<img className="rounded-circle mt-5" width="150px" src={url_photo}/>
+			            	<img className="rounded-circle mt-5" width="150px" src={url_photo} alt="img"/>
 							<button className="btn btn-primary btn-responsive btninter left" type="button">Subir</button>
 								<span className="font-weight-bold"></span>
 			            		<span className="text-black-50"></span><span> </span>
@@ -56,7 +56,7 @@ const Registro = () => {
 			                </div>
 			                <div className="row mt-2">
 			                    <div className="col-md-6"><label className="labels">Nombre</label><input type="text" className="form-control" placeholder="Escriba su nombre..." value={nombre} onChange={(e) => setnombre(e.target.value)}/></div>
-			                    <div className="col-md-6"><label className="labels">Apellido</label><input type="text" className="form-control" value="" placeholder="Escriba su apellido..." value={apellido} onChange={(e) => setapellido(e.target.value)}/></div>
+			                    <div className="col-md-6"><label className="labels">Apellido</label><input type="text" className="form-control" placeholder="Escriba su apellido..." value={apellido} onChange={(e) => setapellido(e.target.value)}/></div>
 			                </div>
 			                <div className="row mt-3">
 			                    <div className="col-md-12"><label className="labels">Cedula</label><input type="text" className="form-control" placeholder="Ingrese su cedula..." value={cedula} onChange={(e) => setcedula(e.target.value)} /></div>

@@ -17,11 +17,12 @@ import {
 import logo from "./assets/images/logo-liderwin.png";
 
 const Header = () => {
-  const { error, isPending, data} = useFetch("http://localhost:3001/categorias")
+  /* const { error, isPending, data} = useFetch("http://localhost:3001/categorias") */
+  const {data} = useFetch("http://localhost:3001/categorias")
   return (
     <div>
       <head>
-        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" />
       </head>
       <body>
         <header>
@@ -29,7 +30,7 @@ const Header = () => {
             <div className="container">
               <ul className="header-links pull-left">
                 <li>
-                  <a href="#">
+                  <a href="/#">
                     <i className="fa fa-envelope-o">
                       <FaRegEnvelope />
                     </i>{" "}
@@ -37,7 +38,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/#">
                     <i className="fa fa-phone">
                       <FaPhoneAlt />
                     </i>{" "}
@@ -45,7 +46,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/#">
                     <i className="fa fa-map-marker">
                       <FaMapMarkerAlt />
                     </i>{" "}
@@ -63,24 +64,24 @@ const Header = () => {
                   {/* </Link> */}
                 </li>
                 <li>
-                  <a>
+                  <div>
                     <Link to='/perfil'>
                     <i className="fa fa-user-o">
                       <FaUser />
                     </i>
                     Perfil
                     </Link>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a>
+                  <div>
                     <Link to='/registro'>
                     <i className="fa fa-user-o">
                       <FaUser />
                     </i>
                     Registrarse
                     </Link>
-                  </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -113,7 +114,7 @@ const Header = () => {
                 <div className="col-md-3 clearfix">
                   <div className="header-ctn">
                     <div>
-                      <a href="#">
+                      <a href="/#">
                         <i className="fa fa-heart-o"></i>
                         <span>Mis Favoritos</span>
                         <i>
@@ -128,6 +129,7 @@ const Header = () => {
                         className="dropdown-toggle"
                         data-toggle="dropdown"
                         aria-expanded="true"
+                        href="/#"
                       >
                         <i className="fa fa-shopping-cart"></i>
                         <span>Mi Carrito</span>
@@ -144,7 +146,7 @@ const Header = () => {
                             </div>
                             <div className="product-body">
                               <h3 className="product-name">
-                                <a href="#">Ledvance SMART+</a>
+                                <a href="/#">Ledvance SMART+</a>
                               </h3>
                               <h4 className="product-price">
                                 <span className="qty">2x</span>$56.00
@@ -161,7 +163,7 @@ const Header = () => {
                             </div>
                             <div className="product-body">
                               <h3 className="product-name">
-                                <a href="#">Nexxt A19</a>
+                                <a href="/#">Nexxt A19</a>
                               </h3>
                               <h4 className="product-price">
                                 <span className="qty">5x</span>$105.00
@@ -177,15 +179,15 @@ const Header = () => {
                           <h5>SUBTOTAL: $161.00</h5>
                         </div>
                         <div className="cart-btns">
-                          <a href="#">Ver Carrito</a>
-                          <a href="compra.html">
+                          <a href="/#">Ver Carrito</a>
+                          <a href="/compra.html">
                             Comprar <i className="fa fa-arrow-circle-right"></i>
                           </a>
                         </div>
                       </div>
                     </div>
                     <div className="menu-toggle">
-                      <a href="#">
+                      <a href="/#">
                         <i className="fa fa-bars"></i>
                         <span>Menú</span>
                       </a>

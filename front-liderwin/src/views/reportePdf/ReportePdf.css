@@ -1,0 +1,9 @@
+.template-reporte{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+h1,p{
+    color:black;
+}

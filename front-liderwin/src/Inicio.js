@@ -44,9 +44,9 @@ import Slider from "react-slick";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStar as fasFaStar,
-  faHeart as fasFaHeart,
+
   faExchangeAlt,
-  faEye as fasFaEye,
+
   faShoppingCart as fasFaShoppingCart
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -106,22 +106,22 @@ const Inicio = () => {
                 <div className="section-nav">
                   <ul className="section-tab-nav tab-nav">
                     <li className="active">
-                      <a data-toggle="tab" href="#tab1">
+                      <a data-toggle="tab" href="/#tab1">
                         Focos Led
                       </a>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#tab1">
+                      <a data-toggle="tab" href="/#tab1">
                         Lámparas
                       </a>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#tab1">
+                      <a data-toggle="tab" href="/#tab1">
                         Reflectores
                       </a>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#tab1">
+                      <a data-toggle="tab" href="/#tab1">
                         Enrutadores
                       </a>
                     </li>
@@ -147,7 +147,7 @@ const Inicio = () => {
                         <div className="product-body">
                           <p className="product-category">Foco Led</p>
                           <h3 className="product-name">
-                            <a href="#">Ledvance SMART+</a>
+                            <a href="/#">Ledvance SMART+</a>
                           </h3>
                           <h4 className="product-price">
                             $28.00{" "}
@@ -195,7 +195,7 @@ const Inicio = () => {
                         <div className="product-body">
                           <p className="product-category">Foco Led</p>
                           <h3 className="product-name">
-                            <a href="#">Ledvance OSRAM</a>
+                            <a href="/#">Ledvance OSRAM</a>
                           </h3>
                           <h4 className="product-price">
                             $22.00{" "}
@@ -243,7 +243,7 @@ const Inicio = () => {
                         <div className="product-body">
                           <p className="product-category">Foco Led</p>
                           <h3 className="product-name">
-                            <a href="#">Nexxt A19</a>
+                            <a href="/#">Nexxt A19</a>
                           </h3>
                           <h4 className="product-price">
                             $21.00{" "}
@@ -288,7 +288,7 @@ const Inicio = () => {
                         <div className="product-body">
                           <p className="product-category">Foco Led</p>
                           <h3 className="product-name">
-                            <a href="#">Sylvania TOLEDO SMART</a>
+                            <a href="/#">Sylvania TOLEDO SMART</a>
                           </h3>
                           <h4 className="product-price">
                             $20.00{" "}
@@ -333,7 +333,7 @@ const Inicio = () => {
                         <div className="product-body">
                           <p className="product-category">Foco Led</p>
                           <h3 className="product-name">
-                            <a href="#">Sylvania Led LYRA</a>
+                            <a href="/#">Sylvania Led LYRA</a>
                           </h3>
                           <h4 className="product-price">
                             $57.00{" "}
@@ -414,7 +414,7 @@ const Inicio = () => {
                 </ul>
                 <h2 className="text-uppercase">ofertas de la semana</h2>
                 <p>Nueva Colección Hasta 50% DE DESCUENTO</p>
-                <a className="primary-btn cta-btn" href="#">
+                <a className="primary-btn cta-btn" href="/#">
                   ¡Compra ya!
                 </a>
               </div>
@@ -432,22 +432,22 @@ const Inicio = () => {
                 <div className="section-nav">
                   <ul className="section-tab-nav tab-nav">
                     <li>
-                      <a data-toggle="tab" href="#tab2">
+                      <a data-toggle="tab" href="/#tab2">
                         Focos Led
                       </a>
                     </li>
                     <li className="active">
-                      <a data-toggle="tab" href="#tab2">
+                      <a data-toggle="tab" href="/#tab2">
                         Lámparas
                       </a>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#tab2">
+                      <a data-toggle="tab" href="/#tab2">
                         Reflectores
                       </a>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#tab2">
+                      <a data-toggle="tab" href="/#tab2">
                         Enrutadores
                       </a>
                     </li>
@@ -472,7 +472,7 @@ const Inicio = () => {
                         <div className="product-body">
                           <p className="product-category">Lámpara</p>
                           <h3 className="product-name">
-                            <a href="#">Led Opera</a>
+                            <a href="/#">Led Opera</a>
                           </h3>
                           <h4 className="product-price">
                             $27.90{" "}
@@ -520,7 +520,7 @@ const Inicio = () => {
                         <div className="product-body">
                           <p className="product-category">Lámpara</p>
                           <h3 className="product-name">
-                            <a href="#">Led Garden</a>
+                            <a href="/#">Led Garden</a>
                           </h3>
                           <h4 className="product-price">
                             $48.30{" "}
@@ -568,7 +568,7 @@ const Inicio = () => {
                         <div className="product-body">
                           <p className="product-category">Lámpara</p>
                           <h3 className="product-name">
-                            <a href="#">Street Light Shark</a>
+                            <a href="/#">Street Light Shark</a>
                           </h3>
                           <h4 className="product-price">
                             $35.00{" "}
@@ -613,7 +613,7 @@ const Inicio = () => {
                         <div className="product-body">
                           <p className="product-category">Lámpara</p>
                           <h3 className="product-name">
-                            <a href="#">Led Emergencia R1 Mini</a>
+                            <a href="/#">Led Emergencia R1 Mini</a>
                           </h3>
                           <h4 className="product-price">
                             $29.70{" "}
@@ -658,7 +658,7 @@ const Inicio = () => {
                         <div className="product-body">
                           <p className="product-category">Lámpara</p>
                           <h3 className="product-name">
-                            <a href="#">Led Emergencia R3</a>
+                            <a href="/#">Led Emergencia R3</a>
                           </h3>
                           <h4 className="product-price">
                             $177.79{" "}
@@ -723,7 +723,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Nexxt</p>
                       <h3 className="product-name">
-                        <a href="#">Nebula 300Mbps</a>
+                        <a href="/#">Nebula 300Mbps</a>
                       </h3>
                       <h4 className="product-price">
                         $21.30 <del className="product-old-price">$24.00</del>
@@ -738,7 +738,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Nexxt</p>
                       <h3 className="product-name">
-                        <a href="#">NYX 1200Mbps</a>
+                        <a href="/#">NYX 1200Mbps</a>
                       </h3>
                       <h4 className="product-price">
                         $21.41<del className="product-old-price">$27.66</del>
@@ -753,7 +753,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Nexxt</p>
                       <h3 className="product-name">
-                        <a href="#">AMP 300Mbps</a>
+                        <a href="/#">AMP 300Mbps</a>
                       </h3>
                       <h4 className="product-price">
                         $23.20 <del className="product-old-price">$32.10</del>
@@ -770,7 +770,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Tp-Link</p>
                       <h3 className="product-name">
-                        <a href="#">Archer AX55</a>
+                        <a href="/#">Archer AX55</a>
                       </h3>
                       <h4 className="product-price">
                         $129.99 <del className="product-old-price">$199.99</del>
@@ -785,7 +785,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Linksys</p>
                       <h3 className="product-name">
-                        <a href="#">MR8300 MU-MIMO</a>
+                        <a href="/#">MR8300 MU-MIMO</a>
                       </h3>
                       <h4 className="product-price">
                         $389.99 <del className="product-old-price">$450.50</del>
@@ -800,7 +800,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Netgear</p>
                       <h3 className="product-name">
-                        <a href="#">AX1800 (RAX10)</a>
+                        <a href="/#">AX1800 (RAX10)</a>
                       </h3>
                       <h4 className="product-price">
                         $114.50 <del className="product-old-price">$139.99</del>
@@ -828,7 +828,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Ledvance</p>
                       <h3 className="product-name">
-                        <a href="#">Floodlight Sensor</a>
+                        <a href="/#">Floodlight Sensor</a>
                       </h3>
                       <h4 className="product-price">
                         $35.00 <del className="product-old-price">$40.00</del>
@@ -843,7 +843,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Ledvance</p>
                       <h3 className="product-name">
-                        <a href="#">Floodlight Low Power</a>
+                        <a href="/#">Floodlight Low Power</a>
                       </h3>
                       <h4 className="product-price">
                         $30.00 <del className="product-old-price">$40.00</del>
@@ -858,7 +858,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Sylvania</p>
                       <h3 className="product-name">
-                        <a href="#">Jeta High Power</a>
+                        <a href="/#">Jeta High Power</a>
                       </h3>
                       <h4 className="product-price">
                         $30.00 <del className="product-old-price">$35.00</del>
@@ -875,7 +875,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Sylvania</p>
                       <h3 className="product-name">
-                        <a href="#">Sylveo Sports</a>
+                        <a href="/#">Sylveo Sports</a>
                       </h3>
                       <h4 className="product-price">
                         $69.00 <del className="product-old-price">$90.00</del>
@@ -890,7 +890,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Sylvania</p>
                       <h3 className="product-name">
-                        <a href="#">Jeta Sensor</a>
+                        <a href="/#">Jeta Sensor</a>
                       </h3>
                       <h4 className="product-price">
                         $60.00 <del className="product-old-price">$70.00</del>
@@ -905,7 +905,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Sylvania</p>
                       <h3 className="product-name">
-                        <a href="#">High Power Start</a>
+                        <a href="/#">High Power Start</a>
                       </h3>
                       <h4 className="product-price">
                         $53.00 <del className="product-old-price">$71.00</del>
@@ -935,7 +935,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Ledvance</p>
                       <h3 className="product-name">
-                        <a href="#">Arealight</a>
+                        <a href="/#">Arealight</a>
                       </h3>
                       <h4 className="product-price">
                         $180.00 <del className="product-old-price">$220.00</del>
@@ -950,7 +950,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Sylvania</p>
                       <h3 className="product-name">
-                        <a href="#">Street Light Urban</a>
+                        <a href="/#">Street Light Urban</a>
                       </h3>
                       <h4 className="product-price">
                         $170.00 <del className="product-old-price">$240.00</del>
@@ -965,7 +965,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Sylvania</p>
                       <h3 className="product-name">
-                        <a href="#">Street Light ZD216</a>
+                        <a href="/#">Street Light ZD216</a>
                       </h3>
                       <h4 className="product-price">
                         $280.00 <del className="product-old-price">$370.00</del>
@@ -982,7 +982,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Ledvance</p>
                       <h3 className="product-name">
-                        <a href="#">Lumilux T5 HE</a>
+                        <a href="/#">Lumilux T5 HE</a>
                       </h3>
                       <h4 className="product-price">
                         $80.00 <del className="product-old-price">$100.00</del>
@@ -997,7 +997,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Ledvance</p>
                       <h3 className="product-name">
-                        <a href="#">Decostar 51 TITAN</a>
+                        <a href="/#">Decostar 51 TITAN</a>
                       </h3>
                       <h4 className="product-price">
                         $260.00 <del className="product-old-price">$300.00</del>
@@ -1012,7 +1012,7 @@ const Inicio = () => {
                     <div className="product-body">
                       <p className="product-category">Sylvania</p>
                       <h3 className="product-name">
-                        <a href="#">Led Estaca</a>
+                        <a href="/#">Led Estaca</a>
                       </h3>
                       <h4 className="product-price">
                         $150.00 <del className="product-old-price">$199.00</del>
